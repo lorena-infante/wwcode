@@ -1,7 +1,4 @@
 import './style.css'
-//import javascriptLogo from './javascript.svg'
-//import viteLogo from '/vite.svg'
-//import { setupCounter } from './counter.js'
 import { hitDrums } from './hitDrums'
 
 document.querySelector('#app').innerHTML = `
@@ -22,4 +19,3 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 hitDrums();
-//setupCounter(document.querySelector('#counter'))

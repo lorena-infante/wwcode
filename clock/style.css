@@ -55,7 +55,7 @@ h1 {
   width: 90%;
   height: 90%;
   color: black;
-  border: solid;
+  border: none;
   inset: 4%;
   border-radius: 100%;
 }
@@ -70,6 +70,18 @@ h1 {
 
 #hourly-hand {
   position: absolute;
+  width: 30%;
+  height: auto;
+  color: black;
+  border: solid;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+  transform: rotate(28deg);
+}
+
+#minute-hand  {
+  position: absolute;
   width: 49.4%;
   height: auto;
   color: black;
@@ -80,16 +92,16 @@ h1 {
   transform: rotate(360deg);
 }
 
-#minute-hand {
+#second-hand  {
   position: absolute;
-  width: 30%;
+  width: 39.4%;
   height: auto;
-  color: black;
+  color: red;
   border: solid;
   top: 50%;
   left: 50%;
   transform-origin: 0% 0%;
-  transform: rotate(28deg);
+  transform: rotate(243deg);
 }
 
 

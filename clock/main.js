@@ -1,4 +1,5 @@
 import './style.css'
+import {  runClock } from './clock.js'
 //import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
@@ -18,3 +19,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 //setupCounter(document.querySelector('#counter'))
+runClock();

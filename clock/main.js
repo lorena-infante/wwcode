@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
           <span id="bullet"></span>
           <span id="hourly-hand"></span>
           <span id="minute-hand"></span>
-          <span id="second-hand"></span>
+          <span id="second-hand" class="move-second"></span>
         </div>
       </div>
     </div>

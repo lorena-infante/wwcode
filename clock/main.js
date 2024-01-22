@@ -1,5 +1,5 @@
-import './style.css'
 import {  runClock } from './clock.js'
+//import {  moveHands } from './clock.js'
 //import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
@@ -9,14 +9,16 @@ document.querySelector('#app').innerHTML = `
       <div id="id-clock" class="clock">
         <div class="clock-hands-container">
           <span id="bullet"></span>
-          <span id="hourly-hand"></span>
+          <span id="hour-hand"></span>
           <span id="minute-hand"></span>
-          <span id="second-hand" class="move-second"></span>
+          <span id="second-hand" class=""></span>
         </div>
       </div>
     </div>
   </div>
 `
 
-//setupCounter(document.querySelector('#counter'))
-runClock();
+const sec = document.getElementById('second-hand');
+const min = document.getElementById('minute-hand');
+const hour = document.getElementById('hour-hand');
+runClock(sec,min,hour);

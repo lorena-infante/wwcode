@@ -70,7 +70,7 @@ h1 {
   z-index: 2;
 }
 
-#hourly-hand {
+#hour-hand {
   position: absolute;
   width: 30%;
   height: auto;
@@ -140,9 +140,6 @@ h1 {
   }
 
 }
-
-
-
 
 @media (prefers-color-scheme: light) {
   :root {

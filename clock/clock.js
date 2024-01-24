@@ -10,17 +10,19 @@ export function runClock(secDOM,minDOM,hourDOM) {
     second = today.getSeconds();
     minute = today.getMinutes();
     hour = today.getHours();
-    
     moveHands(secDOM,minDOM,hourDOM,second,minute,hour);
-   
-    //console.log(`${hour}: ${minute}: ${second}`);
   }
 
   function moveHands(DOMSec,DOMMin,DOMHour,actualSec, actualMin, actualHour){
-    let calcDeg = (actualSec*360)/60;
-    //console.log(DOMSec.style);
-    let moveSecond = DOMSec.style.transform=`rotate(${calcDeg}deg);`;
-    //console.log(moveSecond);
+    let calcDegSec = (actualSec*360)/60;
+    let calcDegMin = (actualMin*360)/60;
+    let calcDegHour= (actualHour*360)/12;
+    //MoveSecond
+    DOMSec.style.transform=`rotate(${calcDegSec}deg)`;
+    //MoveMinute 
+    DOMMin.style.transform=`rotate(${calcDegMin}deg)`;
+    //MoveHour = 
+    DOMHour.style.transform=`rotate(${calcDegHour}deg)`;
   }
 
 return interval;

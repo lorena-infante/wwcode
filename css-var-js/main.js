@@ -3,7 +3,7 @@ import { modifyControls } from './controls';
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
-  <h1 class="title">Update CSS variables with <span class="js">JS</span></h1>
+  <h1 class="title">Update CSS variables with <span id="js-text">JS</span></h1>
   <div class="range-container">
     <div class="spacing">
       <p>Spacing</p>
@@ -16,7 +16,7 @@ document.querySelector('#app').innerHTML = `
   </div>
   <div class="color-picker">
     <p>Change base color:</p>
-    <input type="color" id="color-picker" value="#6A5ACD">
+    <input type="color" id="color-picker" value="#35d465">
   </div>
 
   <div class="img-container">
@@ -29,6 +29,7 @@ document.querySelector('#app').innerHTML = `
 const spacingRange = document.getElementById('spacing');
 const blurRange = document.getElementById('range');
 const colorPicker = document.getElementById('color-picker');
+const jsText = document.getElementById('js-text');
 const bgColor = document.getElementById('bg-color');
 const image = document.getElementById('photo');
-modifyControls(spacingRange, blurRange, colorPicker, bgColor, image);
+modifyControls(spacingRange, blurRange, colorPicker, jsText,bgColor, image);

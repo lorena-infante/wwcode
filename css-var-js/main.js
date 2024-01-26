@@ -21,7 +21,7 @@ document.querySelector('#app').innerHTML = `
 
   <div class="img-container">
     <div class="img">
-      <img src="" alt="">
+      <img class="img-photo" src="https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg" alt="Img of a landscape">
     </div>
   </div>
   </div>

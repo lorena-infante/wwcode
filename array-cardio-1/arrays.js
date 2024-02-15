@@ -171,5 +171,12 @@ const data = [
   "car",
   "truck",
 ];
-const sumUpData = new Set (data);
-console.log(sumUpData);
+const transportation = data.reduce((sum,transport)=>{
+  if(!sum[transport]){
+    sum[transport] = 1;
+  }
+    else {
+      sum[transport]++;
+    }
+  return sum;
+},{})

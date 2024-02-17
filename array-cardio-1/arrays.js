@@ -149,9 +149,9 @@ console.log(`Boulevards with "de": ${boulevardsWDe}`);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
-const peopleLastName = people.toSorted();
-console.log(people)
-console.log(`peopleLastName: ${peopleLastName}`);
+let sorted = people.toSorted((a,b)=>{
+  return a < b ? -1 : 1
+})
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these

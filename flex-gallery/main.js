@@ -1,4 +1,5 @@
 import "./style.css";
+
 //import { setupCounter } from './counter.js'
 /*Let us firmly hold the profession of our faith without wavering, for He who promised is faithful. Hb.10:23*/
 document.querySelector("#app").innerHTML = `
@@ -19,7 +20,7 @@ document.querySelector("#app").innerHTML = `
   <div id="img-3" class="col-img col-img-3">
     <div class="text-container">
       <span>without wavering,</span>
-      <span>for He</span>
+      <span class="special-color">for He</span>
     </div>
   </div>
   <div id="img-4" class="col-img col-img-4">
